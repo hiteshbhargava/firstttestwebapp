@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<title>Skilldosti</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/colors/main.css" id="colors">
+
+</head>
+
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<% include common/header.ejs %>
+
+
+<!-- Titlebar
+================================================== -->
+<div id="titlebar">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<h2>Masonry Filtering</h2>
+
+				<!-- Breadcrumbs -->
+				<nav id="breadcrumbs">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li>Masonry Filtering</li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Content
+================================================== -->
+<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<!-- Filters -->
+				<div id="filters">
+					<ul class="option-set margin-bottom-30">
+						<li><a href="#filter" class="selected" data-filter="*">All</a></li>
+						<li><a href="#filter" data-filter=".first-filter">First Filter</a></li>
+						<li><a href="#filter" data-filter=".second-filter">Second Filter</a></li>
+						<li><a href="#filter" data-filter=".third-filter">Third Filter</a></li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+
+			</div>
+		</div>
+
+	<div class="row">
+
+		<!-- Projects -->
+		<div class="projects isotope-wrapper">
+
+
+				<!-- Listing Item -->
+				<div class="col-lg-4 col-md-6 isotope-item first-filter">
+					<a href="listings-single-page.html" class="listing-item-container compact">
+						<div class="listing-item">
+							<img src="images/listing-item-01.jpg" alt="">
+
+							<div class="listing-badge now-open">Now Open</div>
+
+							<div class="listing-item-content">
+								<div class="numerical-rating" data-rating="3.5"></div>
+								<h3>Tom's Restaurant</h3>
+								<span>964 School Street, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="col-lg-4 col-md-6 isotope-item second-filter first-filter">
+					<a href="listings-single-page.html" class="listing-item-container compact">
+						<div class="listing-item">
+							<img src="images/listing-item-02.jpg" alt="">
+							<div class="listing-item-details">
+								<ul>
+									<li>Friday, August 10</li>
+								</ul>
+							</div>
+							<div class="listing-item-content">
+								<div class="numerical-rating" data-rating="5.0"></div>
+								<h3>Sticky Band</h3>
+								<span>Bishop Avenue, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="col-lg-4 col-md-6 isotope-item third-filter first-filter">
+					<a href="listings-single-page.html" class="listing-item-container compact">
+						<div class="listing-item">
+							<img src="images/listing-item-03.jpg" alt="">
+							<div class="listing-item-details">
+								<ul>
+									<li>Starting from $59 per night</li>
+								</ul>
+							</div>
+							<div class="listing-item-content">
+								<div class="numerical-rating" data-rating="2.0"></div>
+								<h3>Hotel Govendor</h3>
+								<span>778 Country Street, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="col-lg-4 col-md-6 isotope-item third-filter">
+					<a href="listings-single-page.html" class="listing-item-container compact">
+						<div class="listing-item">
+							<img src="images/listing-item-04.jpg" alt="">
+
+							<div class="listing-badge now-open">Now Open</div>
+
+							<div class="listing-item-content">
+								<div class="numerical-rating" data-rating="5.0"></div>
+								<h3>Burger House</h3>
+								<span>2726 Shinn Street, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="col-lg-4 col-md-6 isotope-item second-filter">
+					<a href="listings-single-page.html" class="listing-item-container compact">
+						<div class="listing-item">
+							<img src="images/listing-item-05.jpg" alt="">
+							<div class="listing-item-content">
+								<div class="numerical-rating" data-rating="3.5"></div>
+								<h3>Airport</h3>
+								<span>1512 Duncan Avenue, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="col-lg-4 col-md-6 isotope-item first-filter">
+					<a href="listings-single-page.html" class="listing-item-container compact">
+						<div class="listing-item">
+							<img src="images/listing-item-06.jpg" alt="">
+
+							<div class="listing-badge now-closed">Now Closed</div>
+
+							<div class="listing-item-content">
+								<div class="numerical-rating" data-rating="4.5"></div>
+								<h3>Think Coffee</h3>
+								<span>215 Terry Lane, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+
+		</div>
+
+	</div>
+</div>
+
+
+
+
+<% include common/footer.ejs %>
+
+
+<!-- Back To Top Button -->
+<div id="backtotop"><a href="#"></a></div>
+
+
+</div>
+<!-- Wrapper / End -->
+
+
+
+<!-- Scripts
+================================================== -->
+<script type="text/javascript" src="scripts/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="scripts/mmenu.min.js"></script>
+<script type="text/javascript" src="scripts/chosen.min.js"></script>
+<script type="text/javascript" src="scripts/slick.min.js"></script>
+<script type="text/javascript" src="scripts/rangeslider.min.js"></script>
+<script type="text/javascript" src="scripts/magnific-popup.min.js"></script>
+<script type="text/javascript" src="scripts/waypoints.min.js"></script>
+<script type="text/javascript" src="scripts/counterup.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+<script type="text/javascript" src="scripts/tooltips.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+
+<!-- Masonry Filtering -->
+<script type="text/javascript" src="scripts/isotope.min.js"></script>
+<script>
+	$(window).load(function(){
+	  var $container = $('.isotope-wrapper');
+	  $container.isotope({ itemSelector: '.isotope-item', layoutMode: 'masonry' });
+	});
+
+	$('#filters a').click(function(e){
+	  e.preventDefault();
+
+	  var selector = $(this).attr('data-filter');
+	  $('.projects.isotope-wrapper').isotope({ filter: selector });
+
+	  $(this).parents('ul').find('a').removeClass('selected');
+	  $(this).addClass('selected');
+	});
+</script>
+
+
+<!-- Style Switcher
+================================================== -->
+<script src="scripts/switcher.js"></script>
+
+<div id="style-switcher">
+	<h2>Color Switcher <a href="#"><i class="sl sl-icon-settings"></i></a></h2>
+
+	<div>
+		<ul class="colors" id="color1">
+			<li><a href="#" class="main" title="Main"></a></li>
+			<li><a href="#" class="blue" title="Blue"></a></li>
+			<li><a href="#" class="green" title="Green"></a></li>
+			<li><a href="#" class="orange" title="Orange"></a></li>
+			<li><a href="#" class="navy" title="Navy"></a></li>
+			<li><a href="#" class="yellow" title="Yellow"></a></li>
+			<li><a href="#" class="peach" title="Peach"></a></li>
+			<li><a href="#" class="beige" title="Beige"></a></li>
+			<li><a href="#" class="purple" title="Purple"></a></li>
+			<li><a href="#" class="celadon" title="Celadon"></a></li>
+			<li><a href="#" class="red" title="Red"></a></li>
+			<li><a href="#" class="brown" title="Brown"></a></li>
+			<li><a href="#" class="cherry" title="Cherry"></a></li>
+			<li><a href="#" class="cyan" title="Cyan"></a></li>
+			<li><a href="#" class="gray" title="Gray"></a></li>
+			<li><a href="#" class="olive" title="Olive"></a></li>
+		</ul>
+	</div>
+
+</div>
+<!-- Style Switcher / End -->
+
+
+</body>
+</html>

@@ -1,0 +1,543 @@
+<!-- Header Container
+================================================== -->
+<% errors = {} %>
+<header id="header-container">
+
+	<!-- Header -->
+	<div id="header">
+		<div class="container">
+
+			<!-- Left Side Content -->
+			<div class="left-side">
+
+				<!-- Logo -->
+				<div id="logo">
+					<a href="/"><img src="images/logo.jpg" alt=""></a>
+				</div>
+
+				<!-- Mobile Navigation -->
+				<div class="mmenu-trigger">
+					<button class="hamburger hamburger--collapse" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</div>
+
+
+				<!-- Main Navigation -->
+				<nav id="navigation" class="style-1">
+					<ul id="responsive">
+						<li><a  href="/">Home</a>  <!-- class="current" -->
+						</li>
+
+						<li><a href="/">Listings</a>
+							<ul>
+								<li><a href="listings-half-screen-map-list">List Layout</a></li>
+								<li><a href="listings-single-page">Single Listing</a></li>
+							</ul>
+						</li>
+
+							<li><a href="/">User Panel</a>
+								<ul>
+									<li><a href="dashboard">Dashboard</a></li>
+									<li><a href="dashboard-messages">Messages</a></li>
+									<li><a href="dashboard-bookings">Bookings</a></li>
+									<li><a href="dashboard-my-listings">My Listings</a></li>
+									<li><a href="dashboard-reviews">Reviews</a></li>
+									<li><a href="dashboard-bookmarks">Bookmarks</a></li>
+									<li><a href="dashboard-add-listing">Add Listing</a></li>
+									<li><a href="dashboard-my-profile">My Profile</a></li>
+									<li><a href="dashboard-invoice">Invoice</a></li>
+								</ul>
+							</li>
+
+						<li><a href="/">Pages</a>
+							<ul>
+								<li><a href="/pages/-user-profile">User Profile</a></li>
+								<li><a href="/pages/-booking">Booking Page</a></li>
+								<li><a href="/pages/-add-listing">Add Listing</a></li>
+								<li><a href="/pages/-blog">Blog</a>
+									<ul>
+										<li><a href="/pages/-blog">Blog</a></li>
+										<li><a href="/pages/-blog-post">Blog Post</a></li>
+									</ul>
+								</li>
+								<li><a href="/pages/-contact">Contact</a></li>
+								<li><a href="/pages/-coming-soon">Coming Soon</a></li>
+								<li><a href="/pages/-elements">Elements</a></li>
+								<li><a href="/pages/-pricing-tables">Pricing Tables</a></li>
+								<li><a href="/pages/-typography">Typography</a></li>
+								<li><a href="/pages/-masonry-filtering">Masonry Filtering</a></li>
+								<li><a href="/pages/-404">404 Page</a></li>
+								<li><a href="/pages/-icons">Icons</a></li>
+							</ul>
+						</li>
+
+					</ul>
+				</nav>
+				<div class="clearfix"></div>
+        <!-- Main Navigation / End -->
+      </div>
+            <!-- Left Side Content / End -->
+
+
+            <!-- Right Side Content / End -->
+            <div class="right-side">
+              <div class="header-widget">
+								<nav id="navigation" class="style-1">
+								<ul id="responsive">
+								<li>
+								<a href="#" ><i class="sl sl-icon-login"></i> Sign In</a>
+								<ul>
+									<li>	<a href="#sign-in-dialog0" class="sign-in popup-with-zoom-anim" >As a Tutor</a></li>
+									<li>	<a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim" >As a Institute</a></li>
+									<li>	<a href="#sign-in-dialog2" class="sign-in popup-with-zoom-anim" >As a User</a></li>
+								</ul>
+							</li>
+
+
+                <a href="/dashboard/-add-listing" class="button border with-icon">Add Listing <i class="sl sl-icon-plus"></i></a>
+							</ul>
+						</nav>
+              </div>
+            </div>
+            <!-- Right Side Content / End -->
+            <!-- Sign In Popup -->
+      			<div id="sign-in-dialog0" class="zoom-anim-dialog mfp-hide">
+
+      				<div class="small-dialog-header">
+      					<h3 >Sign In</h3>
+      				</div>
+
+      				<!--Tabs -->
+      				<div class="sign-in-form style-1">
+
+      					<ul class="tabs-nav">
+      						<li class=""><a href="#tab1">Log In</a></li>
+
+
+      						<li><a href="#tab2">Register</a></li>
+      					</ul>
+
+      					<div class="tabs-container alt">
+
+      						<!-- Login -->
+      						<div class="tab-content" id="tab1" style="display: none;">
+      							<form method="post" class="login" action="/users/login">
+
+      								<p class="form-row form-row-wide">
+      									<label for="username">Username:
+      										<i class="im im-icon-Male"></i>
+      										<input type="text" class="input-text" name="username" id="username" value="" />
+      									</label>
+
+      								</p>
+
+      								<p class="form-row form-row-wide">
+      									<label for="password">Password:
+      										<i class="im im-icon-Lock-2"></i>
+      										<input class="input-text" type="password" name="password" id="password"/>
+      									</label>
+      									<span class="lost_password">
+      										<a href="#" >Lost Your Password?</a>
+      									</span>
+      								</p>
+
+      								<div class="form-row">
+      									<input type="submit" class="button border margin-top-5" name="login" value="Login" style="width:100%;background-color:#C0C0C0;color:#444" />
+												<div class="checkboxes margin-top-10">
+      										<input id="remember-me" type="checkbox" name="check">
+      										<label for="remember-me">Remember Me</label>
+      									</div>
+												<button type="submit" class="button  margin-top-30 " name="flogin" style="background-color:#3b5998;width:100%"><i class="fa fa-facebook margin-right-10"></i>Continue with Facebook Login</button>
+												<button type="submit" class="button  margin-top-5" name="glogin" style="background-color:#d34836;width:100%"><i class="fa fa-google-plus-square margin-right-10" style="font-size:150%;"></i>Login with Google</button>
+
+      								</div>
+
+      							</form>
+      						</div>
+
+      						<!-- Register -->
+      						<div class="tab-content" id="tab2" style="display: none;">
+
+      							<form method="post" class="register" action="/users/register">
+
+      							<p class="form-row form-row-wide">
+      								<label for="username2">Username:
+      									<i class="im im-icon-Male"></i>
+      									<input type="text" class="input-text" name="username" id="username2" value="" />
+      								</label>
+											<span class="text-danger">
+			                <% if(errors.username){ %>
+			                <%= errors.username %>
+			                <% } %>
+			                </span>
+      							</p>
+
+										<p class="form-row form-row-wide">
+      								<label for="phone">Phone Number:
+      									<i class="fa fa-phone"></i>
+      									<input type="text" class="input-text" name="phone" id="phone" value="" />
+      								</label>
+											<span class="text-danger">
+											<% if(errors.phone){ %>
+											<%= errors.phone %>
+											<% } %>
+											</span>
+      							</p>
+
+      							<p class="form-row form-row-wide">
+      								<label for="email2">Email Address:
+      									<i class="im im-icon-Mail"></i>
+      									<input type="text" class="input-text" name="email" id="email2" value="" />
+      								</label>
+											<span class="text-danger">
+			                <% if(errors.email){ %>
+			                <%= errors.email %>
+			                <% } %>
+			                </span>
+      							</p>
+
+      							<p class="form-row form-row-wide">
+      								<label for="password1">Password:
+      									<i class="im im-icon-Lock-2"></i>
+      									<input class="input-text" type="password" name="password1" id="password1"/>
+      								</label>
+											<span class="text-danger">
+			                <% if(errors.password1){ %>
+			                <%= errors.password1 %>
+			                <% } %>
+			                </span>
+      							</p>
+
+      							<p class="form-row form-row-wide">
+      								<label for="password2">Repeat Password:
+      									<i class="im im-icon-Lock-2"></i>
+      									<input class="input-text" type="password" name="password2" id="password2"/>
+      								</label>
+											<span class="text-danger">
+			                <% if(errors.password2){ %>
+			                <%= errors.password2 %>
+			                <% } %>
+			                </span>
+      							</p>
+										<input type="hidden" name="role" value="0">
+										<div class="form-row">
+											<input type="submit" class="button border margin-top-5" name="register" value="Register" style="width:100%;background-color:#C0C0C0;color:#444" />
+
+											<button type="submit" class="button  margin-top-30 " name="rlogin" style="background-color:#3b5998;width:100%"><i class="fa fa-facebook margin-right-10"></i>Continue with Facebook Login</button>
+											<button type="submit" class="button  margin-top-5" name="rlogin" style="background-color:#d34836;width:100%"><i class="fa fa-google-plus-square margin-right-10" style="font-size:150%;"></i>Login with Google</button>
+
+										</div>
+
+
+
+
+      							</form>
+      						</div>
+
+      					</div>
+      				</div>
+      			</div>
+      			<!-- Sign In Popup / End -->
+
+
+
+
+
+						<div id="sign-in-dialog2" class="zoom-anim-dialog mfp-hide">
+
+							<div class="small-dialog-header">
+								<h3 >Sign In</h3>
+							</div>
+
+							<!--Tabs -->
+							<div class="sign-in-form style-1">
+
+								<ul class="tabs-nav">
+									<li class=""><a href="#tab1">Log In</a></li>
+
+
+									<li><a href="#tab2">Register</a></li>
+								</ul>
+
+								<div class="tabs-container alt">
+
+									<!-- Login -->
+									<div class="tab-content" id="tab1" style="display: none;">
+										<form method="post" class="login" action="/users/login">
+
+											<p class="form-row form-row-wide">
+												<label for="username">Username:
+													<i class="im im-icon-Male"></i>
+													<input type="text" class="input-text" name="username" id="username" value="" />
+												</label>
+
+											</p>
+
+											<p class="form-row form-row-wide">
+												<label for="password">Password:
+													<i class="im im-icon-Lock-2"></i>
+													<input class="input-text" type="password" name="password" id="password"/>
+												</label>
+												<span class="lost_password">
+													<a href="#" >Lost Your Password?</a>
+												</span>
+											</p>
+
+											<div class="form-row">
+												<input type="submit" class="button border margin-top-5" name="login" value="Login" style="width:100%;background-color:#C0C0C0;color:#444" />
+												<div class="checkboxes margin-top-10">
+													<input id="remember-me" type="checkbox" name="check">
+													<label for="remember-me">Remember Me</label>
+												</div>
+												<button type="submit" class="button  margin-top-30 " name="flogin" style="background-color:#3b5998;width:100%"><i class="fa fa-facebook margin-right-10"></i>Continue with Facebook Login</button>
+												<button type="submit" class="button  margin-top-5" name="glogin" style="background-color:#d34836;width:100%"><i class="fa fa-google-plus-square margin-right-10" style="font-size:150%;"></i>Login with Google</button>
+
+											</div>
+
+										</form>
+									</div>
+
+									<!-- Register -->
+									<div class="tab-content" id="tab2" style="display: none;">
+
+										<form method="post" class="register" action="/users/register">
+
+										<p class="form-row form-row-wide">
+											<label for="username2">Username:
+												<i class="im im-icon-Male"></i>
+												<input type="text" class="input-text" name="username" id="username2" value="" />
+											</label>
+											<span class="text-danger">
+											<% if(errors.username){ %>
+											<%= errors.username %>
+											<% } %>
+											</span>
+										</p>
+
+										<p class="form-row form-row-wide">
+											<label for="phone">Phone Number:
+												<i class="fa fa-phone"></i>
+												<input type="text" class="input-text" name="phone" id="phone" value="" />
+											</label>
+											<span class="text-danger">
+											<% if(errors.phone){ %>
+											<%= errors.phone %>
+											<% } %>
+											</span>
+										</p>
+
+										<p class="form-row form-row-wide">
+											<label for="email2">Email Address:
+												<i class="im im-icon-Mail"></i>
+												<input type="text" class="input-text" name="email" id="email2" value="" />
+											</label>
+											<span class="text-danger">
+											<% if(errors.email){ %>
+											<%= errors.email %>
+											<% } %>
+											</span>
+										</p>
+
+										<p class="form-row form-row-wide">
+											<label for="password1">Password:
+												<i class="im im-icon-Lock-2"></i>
+												<input class="input-text" type="password" name="password1" id="password1"/>
+											</label>
+											<span class="text-danger">
+											<% if(errors.password1){ %>
+											<%= errors.password1 %>
+											<% } %>
+											</span>
+										</p>
+
+										<p class="form-row form-row-wide">
+											<label for="password2">Repeat Password:
+												<i class="im im-icon-Lock-2"></i>
+												<input class="input-text" type="password" name="password2" id="password2"/>
+											</label>
+											<span class="text-danger">
+											<% if(errors.password2){ %>
+											<%= errors.password2 %>
+											<% } %>
+											</span>
+										</p>
+										<input type="hidden" name="role" value="2">
+										<div class="form-row">
+											<input type="submit" class="button border margin-top-5" name="register" value="Register" style="width:100%;background-color:#C0C0C0;color:#444" />
+
+											<button type="submit" class="button  margin-top-30 " name="rlogin" style="background-color:#3b5998;width:100%"><i class="fa fa-facebook margin-right-10"></i>Continue with Facebook Login</button>
+											<button type="submit" class="button  margin-top-5" name="rlogin" style="background-color:#d34836;width:100%"><i class="fa fa-google-plus-square margin-right-10" style="font-size:150%;"></i>Login with Google</button>
+
+										</div>
+
+
+
+
+										</form>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+
+
+
+						<div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
+
+      				<div class="small-dialog-header">
+      					<h3 >Sign In</h3>
+      				</div>
+
+      				<!--Tabs -->
+      				<div class="sign-in-form style-1">
+
+      					<ul class="tabs-nav">
+      						<li class=""><a href="#tab1">Log In</a></li>
+
+
+      						<li><a href="#tab2">Register</a></li>
+      					</ul>
+
+      					<div class="tabs-container alt">
+
+      						<!-- Login -->
+      						<div class="tab-content" id="tab1" style="display: none;">
+      							<form method="post" class="login" action="/users/login">
+
+      								<p class="form-row form-row-wide">
+      									<label for="username">Username:
+      										<i class="im im-icon-Male"></i>
+      										<input type="text" class="input-text" name="username" id="username" value="" />
+      									</label>
+
+      								</p>
+
+      								<p class="form-row form-row-wide">
+      									<label for="password">Password:
+      										<i class="im im-icon-Lock-2"></i>
+      										<input class="input-text" type="password" name="password" id="password"/>
+      									</label>
+      									<span class="lost_password">
+      										<a href="#" >Lost Your Password?</a>
+      									</span>
+      								</p>
+
+      								<div class="form-row">
+      									<input type="submit" class="button border margin-top-5" name="login" value="Login" style="width:100%;background-color:#C0C0C0;color:#444" />
+												<div class="checkboxes margin-top-10">
+      										<input id="remember-me" type="checkbox" name="check">
+      										<label for="remember-me">Remember Me</label>
+      									</div>
+												<button type="submit" class="button  margin-top-30 " name="flogin" style="background-color:#3b5998;width:100%"><i class="fa fa-facebook margin-right-10"></i>Continue with Facebook Login</button>
+												<button type="submit" class="button  margin-top-5" name="glogin" style="background-color:#d34836;width:100%"><i class="fa fa-google-plus-square margin-right-10" style="font-size:150%;"></i>Login with Google</button>
+
+      								</div>
+
+      							</form>
+      						</div>
+
+      						<!-- Register -->
+      						<div class="tab-content" id="tab2" style="display: none;">
+
+      							<form method="post" class="register" action="/users/register">
+
+      							<p class="form-row form-row-wide">
+      								<label for="username2">Username:
+      									<i class="im im-icon-Male"></i>
+      									<input type="text" class="input-text" name="username" id="username2" value="" />
+      								</label>
+											<span class="text-danger">
+			                <% if(errors.username){ %>
+			                <%= errors.username %>
+			                <% } %>
+			                </span>
+      							</p>
+
+										<p class="form-row form-row-wide">
+      								<label for="phone">Phone Number:
+      									<i class="fa fa-phone"></i>
+      									<input type="text" class="input-text" name="phone" id="phone" value="" />
+      								</label>
+											<span class="text-danger">
+											<% if(errors.phone){ %>
+											<%= errors.phone %>
+											<% } %>
+											</span>
+      							</p>
+
+      							<p class="form-row form-row-wide">
+      								<label for="email2">Email Address:
+      									<i class="im im-icon-Mail"></i>
+      									<input type="text" class="input-text" name="email" id="email2" value="" />
+      								</label>
+											<span class="text-danger">
+			                <% if(errors.email){ %>
+			                <%= errors.email %>
+			                <% } %>
+			                </span>
+      							</p>
+
+      							<p class="form-row form-row-wide">
+      								<label for="password1">Password:
+      									<i class="im im-icon-Lock-2"></i>
+      									<input class="input-text" type="password" name="password1" id="password1"/>
+      								</label>
+											<span class="text-danger">
+			                <% if(errors.password1){ %>
+			                <%= errors.password1 %>
+			                <% } %>
+			                </span>
+      							</p>
+
+      							<p class="form-row form-row-wide">
+      								<label for="password2">Repeat Password:
+      									<i class="im im-icon-Lock-2"></i>
+      									<input class="input-text" type="password" name="password2" id="password2"/>
+      								</label>
+											<span class="text-danger">
+			                <% if(errors.password2){ %>
+			                <%= errors.password2 %>
+			                <% } %>
+			                </span>
+      							</p>
+										<input type="hidden" name="role" value="1">
+										<div class="form-row">
+											<input type="submit" class="button border margin-top-5" name="register" value="Register" style="width:100%;background-color:#C0C0C0;color:#444" />
+
+											<button type="submit" class="button  margin-top-30 " name="rlogin" style="background-color:#3b5998;width:100%"><i class="fa fa-facebook margin-right-10"></i>Continue with Facebook Login</button>
+											<button type="submit" class="button  margin-top-5" name="rlogin" style="background-color:#d34836;width:100%"><i class="fa fa-google-plus-square margin-right-10" style="font-size:150%;"></i>Login with Google</button>
+
+										</div>
+
+
+
+
+      							</form>
+      						</div>
+
+      					</div>
+      				</div>
+      			</div>
+
+
+
+
+
+
+
+
+
+
+      		</div>
+      	</div>
+      	<!-- Header / End -->
+
+
+
+      </header>
+      <div class="clearfix"></div>
+      <!-- Header Container / End -->
